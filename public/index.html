@@ -1,161 +1,243 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Novel Day プライバシーポリシー</title>
-<style>
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-    margin: 0;
-    padding: 1rem;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.6;
-    color: #333;
-    background: #fff;
-  }
-  header {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  header h1 {
-    margin: 0;
-    font-size: 2rem;
-    font-weight: 700;
-  }
-  header p {
-    margin: 0.25rem 0 0;
-    font-size: 1.1rem;
-    color: #555;
-  }
-  h2 {
-    margin-top: 2rem;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 0.3rem;
-    font-size: 1.4rem;
-    color: #222;
-  }
-  p, ul {
-    font-size: 1rem;
-    color: #444;
-  }
-  ul {
-    padding-left: 1.2rem;
-  }
-  a {
-    color: #0066cc;
-    text-decoration: none;
-  }
-  a:hover, a:focus {
-    text-decoration: underline;
-  }
-  @media (max-width: 480px) {
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Novel Day プライバシーポリシー</title>
+  <style>
+    :root {
+      --maxw: 760px;
+      --text: #333;
+      --muted: #666;
+      --border: #eee;
+      --chip-bg: #f7f7fb;
+      --chip-active-bg: #efe9ff;
+      --chip-active-text: #3b2a6f;
+    }
+
     body {
-      padding: 1rem 0.75rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
+      margin: 0;
+      padding: 18px;
+      color: var(--text);
+      background: #fff;
+      line-height: 1.7;
     }
+
+    .wrap {
+      max-width: var(--maxw);
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin: 10px 0 18px;
+    }
+
     header h1 {
-      font-size: 1.6rem;
+      font-size: 22px;
+      margin: 0;
+      font-weight: 800;
+      letter-spacing: 0.2px;
     }
+
     header p {
-      font-size: 1rem;
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 14px;
     }
+
+    .topnav {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 0;
+      margin-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .topnav a {
+      display: inline-block;
+      padding: 0.35rem 0.65rem;
+      border-radius: 999px;
+      background: var(--chip-bg);
+      color: var(--text);
+      font-size: 0.95rem;
+      text-decoration: none;
+    }
+
+    .topnav a[aria-current="page"] {
+      background: var(--chip-active-bg);
+      color: var(--chip-active-text);
+      font-weight: 800;
+    }
+
+    section {
+      padding: 10px 0;
+    }
+
     h2 {
-      font-size: 1.2rem;
+      margin: 0 0 10px;
+      font-size: 16px;
+      font-weight: 900;
     }
-  }
-</style>
+
+    p {
+      margin: 0 0 10px;
+      font-size: 14.5px;
+      color: var(--text);
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.1rem;
+    }
+
+    li {
+      margin: 0 0 8px;
+      font-size: 14.5px;
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 14px 0;
+    }
+
+    .small {
+      color: #777;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 18px;
+    }
+
+    a {
+      color: #0066cc;
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 14px; }
+      header h1 { font-size: 20px; }
+    }
+  </style>
 </head>
 <body>
-<header>
-  <h1>Novel Day</h1>
-  <p>プライバシーポリシー</p>
-</header>
+  <div class="wrap">
 
-<main>
-<section>
-  <h2>概要 (Overview)</h2>
-  <p>このプライバシーポリシーは、アプリ「Novel Day」（以下「当アプリ」）のユーザーの個人情報の収集、利用、保護に関する方針を説明します。当アプリを利用することで、本ポリシーに同意したものとみなされます。</p>
-</section>
+    <nav class="topnav" aria-label="サイト内ナビゲーション">
+      <a href="./index.html" aria-current="page">プライバシーポリシー</a>
+      <a href="./terms.html">利用規約</a>
+      <a href="./contact.html">お問い合わせ</a>
+    </nav>
 
-<section>
-  <h2>収集するデータ (Data We Collect)</h2>
-  <p>当アプリは以下の情報を収集することがあります：</p>
-  <ul>
-    <li>アカウント認証に必要な情報（例：メールアドレス）</li>
-    <li>アプリ利用状況のデータ</li>
-    <li>広告配信および購読管理のためのデバイス識別子</li>
-  </ul>
-</section>
+    <header>
+      <h1>プライバシーポリシー（Novel Day）</h1>
+    </header>
 
-<section>
-  <h2>データの利用方法 (How We Use Data)</h2>
-  <p>収集した情報は以下の目的で利用されます：</p>
-  <ul>
-    <li>ユーザー認証およびアカウント管理</li>
-    <li>サービスの提供および改善</li>
-    <li>広告の配信および購読サービスの管理</li>
-    <li>ユーザーサポートの提供</li>
-  </ul>
-</section>
+    <section>
+      <p>本プライバシーポリシー（以下「本ポリシー」といいます。）は、Novel Day（以下「本サービス」といいます。）におけるユーザー情報の取扱いを定めるものです。</p>
+    </section>
 
-<section>
-  <h2>第三者サービス (Third-Party Services)</h2>
-  <p>当アプリは以下の第三者サービスを利用しています：</p>
-  <ul>
-    <li><strong>Supabase</strong>：データストレージおよび認証サービス</li>
-    <li><strong>Google AdMob</strong>：広告配信サービス</li>
-    <li><strong>RevenueCat</strong>：購読管理サービス</li>
-  </ul>
-  <p>これらの第三者は、広告や購読サービスのためにデバイス識別子などの情報を収集する場合があります。詳細は各サービスのプライバシーポリシーをご確認ください。</p>
-</section>
+    <div class="divider"></div>
 
-<section>
-  <h2>データの保存・保持 (Data Storage/Retention)</h2>
-  <p>収集したデータは、サービス提供に必要な期間保存されます。不要になったデータは安全に削除されます。</p>
-</section>
+    <section>
+      <h2>1. 取得する情報</h2>
+      <ul>
+        <li>アカウント情報（匿名ID、メールアドレス（設定した場合）など）</li>
+        <li>プロフィール情報（表示名、一人称などユーザーが入力した情報）</li>
+        <li>投稿データ（メモ、生成された文章、作成日時等）</li>
+        <li>端末・利用情報（アプリの動作に必要な範囲の端末情報、ログ等）</li>
+        <li>購入・課金情報（プレミアムの購入状態、取引識別子等）※カード情報は運営者が取得しません</li>
+        <li>広告識別子等（広告配信を行う場合）</li>
+      </ul>
+    </section>
 
-<section>
-  <h2>ユーザーの権利 (User Rights)</h2>
-  <p>ユーザーは自身の個人情報のアクセス、修正、削除を求める権利があります。ご希望の場合は下記の連絡先までお問い合わせください。</p>
-</section>
+    <div class="divider"></div>
 
-<section>
-  <h2>お子様のプライバシー (Children)</h2>
-  <p>当アプリは13歳未満の子供を対象としておらず、意図的に13歳未満の子供から個人情報を収集しません。</p>
-</section>
+    <section>
+      <h2>2. 利用目的</h2>
+      <ul>
+        <li>本サービスの提供、本人確認（引き継ぎ設定を含む）、認証のため</li>
+        <li>投稿データの保存、表示、同期のため</li>
+        <li>プレミアム機能の提供、購入状態の確認、購入復元のため</li>
+        <li>不正利用の防止、セキュリティ確保のため</li>
+        <li>お問い合わせ対応、重要なお知らせの通知のため</li>
+        <li>品質改善（クラッシュ・不具合解析等）のため</li>
+        <li>広告の表示および効果測定（実施する場合）のため</li>
+      </ul>
+    </section>
 
-<section>
-  <h2>セキュリティ (Security)</h2>
-  <p>ユーザーの個人情報を保護するために合理的な技術的・組織的対策を講じていますが、インターネット上の完全な安全性は保証できません。</p>
-</section>
+    <div class="divider"></div>
 
-<section>
-  <h2>プライバシーポリシーの変更 (Changes)</h2>
-  <p>本プライバシーポリシーは必要に応じて更新されることがあります。重要な変更がある場合はアプリ内やウェブサイト等で通知します。</p>
-</section>
+    <section>
+      <h2>3. 外部サービスの利用</h2>
+      <p>本サービスは、機能提供のために以下の外部サービスを利用する場合があります。外部サービスの提供者が取得する情報の範囲や取扱いは、各社のプライバシーポリシーをご確認ください。</p>
+      <ul>
+        <li><strong>Supabase</strong>（認証・データベース）</li>
+        <li><strong>RevenueCat</strong>（サブスクリプション管理）</li>
+        <li><strong>Google AdMob</strong>（広告配信）※広告を表示する場合</li>
+      </ul>
+    </section>
 
-<section>
-  <h2>お問い合わせ (Contact)</h2>
-  <p>ご質問やご要望がある場合は、以下のメールアドレスまでご連絡ください：<br />
-  <a href="mailto:splingnew@gmail.com">splingnew@gmail.com</a></p>
-</section>
+    <div class="divider"></div>
 
-<section>
-  <h2>発効日 (Effective Date)</h2>
-  <p>本プライバシーポリシーの発効日は <strong>2025年12月17日</strong> です。</p>
-</section>
+    <section>
+      <h2>4. 第三者提供</h2>
+      <p>運営者は、法令に基づく場合を除き、ユーザー情報を第三者に提供しません。ただし、上記の外部サービスを利用する際、当該サービス提供のために必要な範囲で情報が送信される場合があります。</p>
+    </section>
 
-<section>
-  <h2>日本語の要約 (Japanese Summary)</h2>
-  <p>「Novel Day」では、ユーザーの個人情報を適切に管理し、サービス向上のために利用しています。Supabase、Google AdMob、RevenueCatといった第三者サービスも利用していますが、これらのサービスによる情報収集については各社のプライバシーポリシーをご参照ください。ユーザーは自身の情報のアクセスや削除を求めることができます。</p>
-</section>
+    <div class="divider"></div>
 
-<section>
-  <h2>English Summary</h2>
-  <p>Novel Day collects and manages user information responsibly to provide and improve its services. The app uses third-party services including Supabase for data storage and authentication, Google AdMob for ads, and RevenueCat for subscription management. These third parties may collect device identifiers for their services. Users have the right to access and delete their personal data by contacting us.</p>
-</section>
-</main>
+    <section>
+      <h2>5. 保存期間</h2>
+      <p>ユーザー情報は、利用目的の達成に必要な期間保存します。ユーザーがアプリを削除した場合でも、サーバー側のデータが直ちに消去されるとは限りません。削除をご希望の場合は、お問い合わせ先よりご連絡ください（運営形態により対応方法が異なる場合があります）。</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <h2>6. ユーザーの権利</h2>
+      <ul>
+        <li>プロフィール情報はアプリ内で変更できます。</li>
+        <li>引き継ぎ設定（メールアドレス・パスワード）の変更は、アプリ内の案内に従って行えます。</li>
+        <li>購入状態の復元は、アプリ内の「購入を復元」から行えます。</li>
+      </ul>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <h2>7. セキュリティ</h2>
+      <p>運営者は、ユーザー情報の漏えい、滅失または毀損の防止その他の安全管理のために、合理的な措置を講じます。</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <h2>8. 未成年の利用</h2>
+      <p>未成年のユーザーは、親権者など法定代理人の同意を得たうえで本サービスを利用してください。</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <h2>9. 本ポリシーの変更</h2>
+      <p>運営者は、必要に応じて本ポリシーを変更できます。変更後の内容は、本サービス上での掲示または運営者が適切と判断する方法で周知した時点から効力を生じます。</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <h2>10. お問い合わせ</h2>
+      <p>本サービスに関するお問い合わせ、データ削除のご要望等は、以下のメールアドレスまでご連絡ください。</p>
+      <p>お問い合わせ窓口（運営者メール）：<a href="mailto:splingnew@gmail.com">splingnew@gmail.com</a><br />
+        ※ ご連絡の際は、表示名（アプリ内で設定している名前）を記載いただくと対応がスムーズです。</p>
+    </section>
+
+    <p class="small">最終更新日：2025年12月17日</p>
+
+  </div>
 </body>
 </html>

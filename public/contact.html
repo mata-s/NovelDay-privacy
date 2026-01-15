@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Novel Day お問い合わせ</title>
+  <style>
+    :root {
+      --maxw: 760px;
+      --text: #333;
+      --muted: #666;
+      --border: #eee;
+      --chip-bg: #f7f7fb;
+      --chip-active-bg: #efe9ff;
+      --chip-active-text: #3b2a6f;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+        "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
+      margin: 0;
+      padding: 18px;
+      color: var(--text);
+      background: #fff;
+      line-height: 1.7;
+    }
+
+    .wrap {
+      max-width: var(--maxw);
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin: 10px 0 18px;
+    }
+
+    header h1 {
+      font-size: 22px;
+      margin: 0;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+    }
+
+    header p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .topnav {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 0;
+      margin-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .topnav a {
+      display: inline-block;
+      padding: 0.35rem 0.65rem;
+      border-radius: 999px;
+      background: var(--chip-bg);
+      color: var(--text);
+      font-size: 0.95rem;
+      text-decoration: none;
+    }
+
+    .topnav a[aria-current="page"] {
+      background: var(--chip-active-bg);
+      color: var(--chip-active-text);
+      font-weight: 800;
+    }
+
+    section {
+      padding: 10px 0;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 16px;
+      font-weight: 900;
+    }
+
+    p {
+      margin: 0 0 10px;
+      font-size: 14.5px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.1rem;
+    }
+
+    li {
+      margin: 0 0 8px;
+      font-size: 14.5px;
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 14px 0;
+    }
+
+    .small {
+      color: #777;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 18px;
+    }
+
+    a {
+      color: #0066cc;
+    }
+
+    .mail-box {
+      background: #fafafa;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 14px; }
+      header h1 { font-size: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <nav class="topnav" aria-label="サイト内ナビゲーション">
+      <a href="./index.html">プライバシーポリシー</a>
+      <a href="./terms.html">利用規約</a>
+      <a href="./contact.html" aria-current="page">お問い合わせ</a>
+    </nav>
+
+    <header>
+      <h1>お問い合わせ</h1>
+      <p>Novel Day サポート</p>
+    </header>
+
+    <section>
+      <p>
+        Novel Day に関するご質問、ご要望、不具合のご報告などは、以下のメールアドレスまでご連絡ください。
+      </p>
+    </section>
+
+    <section class="mail-box">
+      <p>
+        お問い合わせ窓口（運営者メール）：<br />
+        <strong>
+          <a href="mailto:splingnew@gmail.com">splingnew@gmail.com</a>
+        </strong>
+      </p>
+      <p class="small" style="text-align:left;">
+        ※ ご連絡の際は、可能であれば以下の情報をご記載ください。
+      </p>
+      <ul>
+        <li>表示名（アプリ内で設定している名前）</li>
+        <li>ご利用端末（iPhone / iPad など）</li>
+        <li>お問い合わせ内容</li>
+      </ul>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <h2>データ削除のご依頼について</h2>
+      <p>
+        アカウントに紐づくデータの削除をご希望の場合は、上記メールアドレス宛にご連絡ください。
+      </p>
+      <p>
+        件名に <strong>「データ削除依頼」</strong> と明記のうえ、本文にアプリ内の表示名をご記載ください。
+        ※ 表示名が分からない場合は、登録しているメールアドレスや利用状況（作成した章の種類など）をご記載ください。
+        本人確認後、順次対応いたします。
+      </p>
+    </section>
+
+    <p class="small">
+      最終更新日：2025年12月17日
+    </p>
+
+  </div>
+</body>
+</html>
