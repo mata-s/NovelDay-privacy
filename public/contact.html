@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Novel Day お問い合わせ</title>
+  <title>お問い合わせ / Contact - 財布の余命 / Wallet Days</title>
   <style>
     :root {
       --maxw: 760px;
@@ -106,6 +106,20 @@
       margin: 14px 0;
     }
 
+    .lang-section { padding-top: 4px; }
+    .lang-label {
+      display: inline-block; margin: 18px 0 10px; padding: 0.25rem 0.6rem;
+      border-radius: 999px; background: var(--chip-active-bg);
+      color: var(--chip-active-text); font-size: 13px; font-weight: 800;
+    }
+    .lang-toggle { display:flex; gap:8px; justify-content:center; margin:10px 0 14px; }
+    .lang-toggle button {
+      border:1px solid var(--border); background:var(--chip-bg); color:var(--text);
+      border-radius:999px; padding:6px 12px; font-weight:700; cursor:pointer;
+    }
+    .lang-toggle button.active { background:var(--chip-active-bg); color:var(--chip-active-text); }
+    .hidden { display:none; }
+
     .small {
       color: #777;
       font-size: 12px;
@@ -135,57 +149,113 @@
   <div class="wrap">
 
     <nav class="topnav" aria-label="サイト内ナビゲーション">
-      <a href="./index.html">プライバシーポリシー</a>
-      <a href="./terms.html">利用規約</a>
-      <a href="./contact.html" aria-current="page">お問い合わせ</a>
+      <a href="./privacy.html"><span data-ja="プライバシーポリシー" data-en="Privacy Policy">プライバシーポリシー</span></a>
+      <a href="./terms.html"><span data-ja="利用規約" data-en="Terms of Use">利用規約</span></a>
+      <a href="./contact.html" aria-current="page"><span data-ja="お問い合わせ" data-en="Contact">お問い合わせ</span></a>
     </nav>
 
     <header>
-      <h1>お問い合わせ</h1>
-      <p>Novel Day サポート</p>
+      <h1><span data-ja="お問い合わせ" data-en="Contact">お問い合わせ</span></h1>
+      <p><span data-ja="財布の余命" data-en="Wallet Days">財布の余命</span></p>
     </header>
 
-    <section>
-      <p>
-        Novel Day に関するご質問、ご要望、不具合のご報告などは、以下のメールアドレスまでご連絡ください。
-      </p>
-    </section>
+    <div class="lang-toggle">
+      <button id="btn-ja" onclick="setLang('ja')">日本語</button>
+      <button id="btn-en" onclick="setLang('en')">English</button>
+    </div>
 
-    <section class="mail-box">
-      <p>
-        お問い合わせ窓口（運営者メール）：<br />
-        <strong>
-          <a href="mailto:splingnew@gmail.com">splingnew@gmail.com</a>
-        </strong>
-      </p>
-      <p class="small" style="text-align:left;">
-        ※ ご連絡の際は、可能であれば以下の情報をご記載ください。
-      </p>
-      <ul>
-        <li>表示名（アプリ内で設定している名前）</li>
-        <li>ご利用端末（iPhone / iPad など）</li>
-        <li>お問い合わせ内容</li>
-      </ul>
-    </section>
+    <div id="section-ja" class="lang-section" lang="ja">
+      <span class="lang-label">日本語</span>
 
-    <div class="divider"></div>
+      <section>
+        <p>財布の余命に関するご質問、ご要望、不具合のご報告などは、以下のメールアドレスまでご連絡ください。</p>
+      </section>
 
-    <section>
-      <h2>データ削除のご依頼について</h2>
-      <p>
-        アカウントに紐づくデータの削除をご希望の場合は、上記メールアドレス宛にご連絡ください。
-      </p>
-      <p>
-        件名に <strong>「データ削除依頼」</strong> と明記のうえ、本文にアプリ内の表示名をご記載ください。
-        ※ 表示名が分からない場合は、登録しているメールアドレスや利用状況（作成した章の種類など）をご記載ください。
-        本人確認後、順次対応いたします。
-      </p>
-    </section>
+      <section class="mail-box">
+        <p>
+          お問い合わせ窓口（運営者メール）：<br />
+          <strong><a href="mailto:splingnew@gmail.com">splingnew@gmail.com</a></strong>
+        </p>
+        <p class="small" style="text-align:left;">※ ご連絡の際は、可能であれば以下の情報をご記載ください。</p>
+        <ul>
+          <li>表示名（アプリ内で設定している名前）</li>
+          <li>ご利用端末（iPhone / iPad など）</li>
+          <li>お問い合わせ内容</li>
+        </ul>
+      </section>
 
-    <p class="small">
-      最終更新日：2025年12月17日
-    </p>
+      <div class="divider"></div>
+
+      <section>
+        <h2>データ削除のご依頼について</h2>
+        <p>アカウントに紐づくデータの削除をご希望の場合は、上記メールアドレス宛にご連絡ください。</p>
+        <p>件名に <strong>「データ削除依頼」</strong> と明記のうえ、本文にアプリ内の表示名をご記載ください。</p>
+      </section>
+    </div>
+
+    <div id="section-en" class="lang-section" lang="en">
+      <span class="lang-label">English</span>
+
+      <section>
+        <p>For questions, requests, or bug reports regarding Wallet Days, please contact us at the email address below.</p>
+      </section>
+
+      <section class="mail-box">
+        <p>
+          Contact email:<br />
+          <strong><a href="mailto:splingnew@gmail.com">splingnew@gmail.com</a></strong>
+        </p>
+        <p class="small" style="text-align:left;">Please include the following information if possible:</p>
+        <ul>
+          <li>Your display name (as set in the app)</li>
+          <li>Your device (iPhone / iPad, etc.)</li>
+          <li>Details of your inquiry</li>
+        </ul>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2>Data Deletion Request</h2>
+        <p>If you would like to delete data associated with your account, please contact us at the email address above.</p>
+        <p>Please include <strong>"Data Deletion Request"</strong> in the subject and your display name in the message.</p>
+      </section>
+    </div>
+
+    <p class="small"><span data-ja="最終更新日：2026年" data-en="Last updated: 2026">最終更新日：2026年</span></p>
 
   </div>
 </body>
+<script>
+  function setLang(lang) {
+    const ja = document.getElementById('section-ja');
+    const en = document.getElementById('section-en');
+    const btnJa = document.getElementById('btn-ja');
+    const btnEn = document.getElementById('btn-en');
+
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-ja][data-en]').forEach((el) => {
+      el.textContent = lang === 'ja' ? el.dataset.ja : el.dataset.en;
+    });
+
+    if (lang === 'ja') {
+      ja.classList.remove('hidden'); en.classList.add('hidden');
+      btnJa.classList.add('active'); btnEn.classList.remove('active');
+    } else {
+      en.classList.remove('hidden'); ja.classList.add('hidden');
+      btnEn.classList.add('active'); btnJa.classList.remove('active');
+    }
+    try { localStorage.setItem('lang', lang); } catch(e) {}
+  }
+
+  (function initLang(){
+    let lang = 'ja'; let saved=null;
+    try { saved = localStorage.getItem('lang'); } catch(e) {}
+    if (saved) lang = saved; else {
+      const nav = (navigator.language||'ja').toLowerCase();
+      if (nav.startsWith('en')) lang='en';
+    }
+    setLang(lang);
+  })();
+</script>
 </html>

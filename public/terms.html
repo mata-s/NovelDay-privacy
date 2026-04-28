@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Novel Day 利用規約</title>
+  <title>財布の余命 / Wallet Days Terms of Use</title>
   <style>
     :root {
       --maxw: 760px;
@@ -108,6 +108,45 @@
       margin: 14px 0;
     }
 
+    .lang-section {
+      padding-top: 4px;
+    }
+
+    .lang-label {
+      display: inline-block;
+      margin: 18px 0 10px;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      background: var(--chip-active-bg);
+      color: var(--chip-active-text);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .lang-toggle {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      margin: 10px 0 14px;
+    }
+
+    .lang-toggle button {
+      border: 1px solid var(--border);
+      background: var(--chip-bg);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .lang-toggle button.active {
+      background: var(--chip-active-bg);
+      color: var(--chip-active-text);
+    }
+
+    .hidden { display: none; }
+
     .small {
       color: #777;
       font-size: 12px;
@@ -129,152 +168,366 @@
   <div class="wrap">
 
     <nav class="topnav" aria-label="サイト内ナビゲーション">
-      <a href="./index.html">プライバシーポリシー</a>
-      <a href="./terms.html" aria-current="page">利用規約</a>
-      <a href="./contact.html">お問い合わせ</a>
+      <a href="./privacy.html"><span data-ja="プライバシーポリシー" data-en="Privacy">プライバシーポリシー</span></a>
+      <a href="./terms.html" aria-current="page"><span data-ja="利用規約" data-en="Terms">利用規約</span></a>
+      <a href="./contact.html"><span data-ja="お問い合わせ" data-en="Contact">お問い合わせ</span></a>
     </nav>
 
     <header>
-      <h1>利用規約（Novel Day）</h1>
+      <h1><span data-ja="利用規約" data-en="Terms of Use">利用規約</span></h1>
+      <p><span data-ja="財布の余命" data-en="Wallet Days">財布の余命</span></p>
     </header>
 
-    <section>
-      <p>本利用規約（以下「本規約」といいます。）は、Novel Day（以下「本サービス」といいます。）の利用条件を定めるものです。ユーザーは、本規約に同意のうえ、本サービスを利用するものとします。</p>
-    </section>
+    <div class="lang-toggle">
+      <button id="btn-ja" onclick="setLang('ja')">日本語</button>
+      <button id="btn-en" onclick="setLang('en')">English</button>
+    </div>
 
-    <div class="divider"></div>
+    <div id="section-ja" class="lang-section" lang="ja">
+      <span class="lang-label">日本語</span>
 
-    <section>
-      <h2>第1条（適用）</h2>
-      <ul>
-        <li>本規約は、本サービスの利用に関する運営者とユーザーとの間の一切の関係に適用されます。</li>
-        <li>運営者が本サービス上で別途定めるルール・ガイドライン等は、本規約の一部を構成します。</li>
-      </ul>
-    </section>
+      <section>
+        <p>本利用規約（以下「本規約」）は、財布の余命（以下「本サービス」）の利用条件を定めるものです。ユーザーは、本規約に同意のうえ、本サービスを利用するものとします。</p>
+      </section>
 
-    <div class="divider"></div>
+      <div class="divider"></div>
 
-    <section>
-      <h2>第2条（定義）</h2>
-      <ul>
-        <li>「ユーザー」：本サービスを利用するすべての者</li>
-        <li>「コンテンツ」：ユーザーが本サービス上に記録・保存する文章等、ならびに本サービスにより生成される文章等</li>
-        <li>「プレミアム」：本サービスの有料機能（第8条）</li>
-      </ul>
-    </section>
+      <section>
+        <h2>第1条（適用）</h2>
+        <ul>
+          <li>本規約は、本サービスの利用に関する運営者とユーザーとの間の一切の関係に適用されます。</li>
+          <li>運営者が本サービス上で別途定めるルール・ガイドライン等は、本規約の一部を構成します。</li>
+        </ul>
+      </section>
 
-    <div class="divider"></div>
+      <div class="divider"></div>
 
-    <section>
-      <h2>第3条（利用登録・アカウント）</h2>
-      <ul>
-        <li>本サービスは、登録なし（匿名）で利用を開始できます。</li>
-        <li>端末変更等によるデータ引き継ぎのため、ユーザーはメールアドレス・パスワードを設定できる場合があります。</li>
-        <li>ユーザーは自己の責任においてログイン情報を管理するものとし、第三者による利用により生じた損害について運営者は責任を負いません（運営者の故意または重大な過失がある場合を除きます）。</li>
-      </ul>
-    </section>
+      <section>
+        <h2>第2条（定義）</h2>
+        <ul>
+          <li>「ユーザー」：本サービスを利用するすべての者</li>
+          <li>「入力データ」：ユーザーが本サービスに入力・保存する支出、予算、カテゴリ、メモ、設定等の情報</li>
+          <li>「プレミアム」：本サービスの有料機能</li>
+        </ul>
+      </section>
 
-    <div class="divider"></div>
+      <div class="divider"></div>
 
-    <section>
-      <h2>第4条（禁止事項）</h2>
-      <ul>
-        <li>法令または公序良俗に反する行為</li>
-        <li>犯罪行為に関連する行為</li>
-        <li>本サービスまたは第三者の権利（著作権、商標権、プライバシー等）を侵害する行為</li>
-        <li>本サービスの運営を妨害する行為（過度な負荷、リバースエンジニアリング、不正アクセス等）</li>
-        <li>その他、運営者が不適切と判断する行為</li>
-      </ul>
-    </section>
+      <section>
+        <h2>第3条（利用登録・アカウント）</h2>
+        <ul>
+          <li>本サービスは、登録なし（匿名）で利用を開始できる場合があります。</li>
+          <li>データのバックアップ、同期、引き継ぎ等のため、ユーザーはメールアドレス、Appleアカウント、Googleアカウント等を利用してログインできる場合があります。</li>
+          <li>ユーザーは自己の責任においてログイン情報を管理するものとし、第三者による利用により生じた損害について運営者は責任を負いません（運営者の故意または重大な過失がある場合を除きます）。</li>
+        </ul>
+      </section>
 
-    <div class="divider"></div>
+      <div class="divider"></div>
 
-    <section>
-      <h2>第5条（コンテンツの取り扱い）</h2>
-      <ul>
-        <li>ユーザーが本サービスに保存するコンテンツの権利は、原則としてユーザーに帰属します。</li>
-        <li>運営者は、本サービスの提供・改善・不具合対応に必要な範囲で、コンテンツを取り扱うことがあります（詳細はプライバシーポリシーに定めます）。</li>
-        <li>ユーザーは自己の責任においてコンテンツを保存・管理するものとし、端末故障・誤操作等により生じた損害について運営者は責任を負いません（運営者の故意または重大な過失がある場合を除きます）。</li>
-      </ul>
-    </section>
+      <section>
+        <h2>第4条（本サービスの内容）</h2>
+        <ul>
+          <li>本サービスは、ユーザーが支出や予算を記録し、残り予算や支出傾向を確認するための家計管理補助サービスです。</li>
+          <li>本サービス上の表示、コメント、通知、レポート等は、入力データに基づく参考情報であり、金融、会計、税務、法律その他の専門的助言を提供するものではありません。</li>
+          <li>ユーザーは、本サービスの表示内容を参考情報として利用し、最終的な判断は自己の責任で行うものとします。</li>
+        </ul>
+      </section>
 
-    <div class="divider"></div>
+      <div class="divider"></div>
 
-    <section>
-      <h2>第6条（生成機能について）</h2>
-      <ul>
-        <li>本サービスには、入力内容等をもとに文章を生成する機能が含まれる場合があります。</li>
-        <li>生成結果は機械的に作成されるものであり、正確性・完全性・特定目的への適合性等を保証するものではありません。</li>
-        <li>ユーザーは、生成結果の利用（公開・共有・商用利用等）について自己の責任で判断するものとします。</li>
-      </ul>
-    </section>
+      <section>
+        <h2>第5条（禁止事項）</h2>
+        <ul>
+          <li>法令または公序良俗に反する行為</li>
+          <li>犯罪行為に関連する行為</li>
+          <li>本サービスまたは第三者の権利（著作権、商標権、プライバシー等）を侵害する行為</li>
+          <li>本サービスの運営を妨害する行為（過度な負荷、リバースエンジニアリング、不正アクセス等）</li>
+          <li>虚偽または不正な情報を用いて本サービスを利用する行為</li>
+          <li>その他、運営者が不適切と判断する行為</li>
+        </ul>
+      </section>
 
-    <div class="divider"></div>
+      <div class="divider"></div>
 
-    <section>
-      <h2>第7条（広告表示）</h2>
-      <ul>
-        <li>本サービスは、無料で提供される範囲において広告を表示する場合があります。</li>
-        <li>プレミアムにより広告表示が停止される場合があります（運営者の定める仕様に従います）。</li>
-      </ul>
-    </section>
+      <section>
+        <h2>第6条（入力データの取り扱い）</h2>
+        <ul>
+          <li>ユーザーが本サービスに保存する入力データの権利は、原則としてユーザーに帰属します。</li>
+          <li>運営者は、本サービスの提供、同期、バックアップ、不具合対応、品質改善に必要な範囲で、入力データを取り扱うことがあります。詳細はプライバシーポリシーに定めます。</li>
+          <li>ユーザーは自己の責任において入力データを保存・管理するものとし、端末故障、誤操作、通信障害等により生じた損害について運営者は責任を負いません（運営者の故意または重大な過失がある場合を除きます）。</li>
+        </ul>
+      </section>
 
-    <div class="divider"></div>
+      <div class="divider"></div>
 
-    <section>
-      <h2>第8条（プレミアム・課金）</h2>
-      <ul>
-        <li>ユーザーは、本サービス上の有料機能（プレミアム）を購入することで、運営者が定める特典を利用できます。</li>
-        <li>プレミアムは、Apple が提供する自動更新サブスクリプションとして提供されます。</li>
-        <li>解約は、端末の「設定 &gt; Apple ID &gt; サブスクリプション」から手続きしてください。</li>
-        <li>購入の復元（リストア）が可能な場合、運営者が定める手順に従ってください。</li>
-        <li>返金は Apple の規定に従います。運営者は、法律上必要な場合を除き、運営者自身による返金対応は行いません。</li>
-      </ul>
-    </section>
+      <section>
+        <h2>第7条（通知・コメント・レポート）</h2>
+        <ul>
+          <li>本サービスは、支出記録後の通知、コメント、月次レポート等を表示する場合があります。</li>
+          <li>これらはユーザーの支出状況を楽しく把握するための参考情報であり、正確性、完全性、特定目的への適合性を保証するものではありません。</li>
+          <li>通知の受信可否は、端末設定またはアプリ内設定により変更できる場合があります。</li>
+        </ul>
+      </section>
 
-    <div class="divider"></div>
+      <div class="divider"></div>
 
-    <section>
-      <h2>第9条（サービスの変更・停止）</h2>
-      <p>運営者は、ユーザーへの事前通知なく、本サービスの内容の変更、提供の停止または中断を行うことがあります。</p>
-    </section>
+      <section>
+        <h2>第8条（広告表示）</h2>
+        <ul>
+          <li>本サービスは、無料で提供される範囲において広告を表示する場合があります。</li>
+          <li>プレミアムにより広告表示が停止される場合があります（運営者の定める仕様に従います）。</li>
+        </ul>
+      </section>
 
-    <div class="divider"></div>
+      <div class="divider"></div>
 
-    <section>
-      <h2>第10条（免責事項）</h2>
-      <ul>
-        <li>運営者は、本サービスに関して、事実上または法律上の瑕疵がないことを保証しません。</li>
-        <li>本サービスの利用によりユーザーに生じた損害について、運営者は責任を負いません（運営者の故意または重大な過失がある場合を除きます）。</li>
-        <li>通信回線・端末・ストア障害等の外部要因により生じた損害について、運営者は責任を負いません。</li>
-      </ul>
-    </section>
+      <section>
+        <h2>第9条（プレミアム・課金）</h2>
+        <ul>
+          <li>ユーザーは、本サービス上の有料機能（プレミアム）を購入することで、運営者が定める特典を利用できます。</li>
+          <li>プレミアムは、AppleまたはGoogle等のアプリストアが提供する自動更新サブスクリプションとして提供される場合があります。</li>
+          <li>解約は、各アプリストアの定める方法に従って手続きしてください。</li>
+          <li>購入の復元が可能な場合、アプリ内の案内または運営者が定める手順に従ってください。</li>
+          <li>返金は各アプリストアの規定に従います。運営者は、法律上必要な場合を除き、運営者自身による返金対応は行いません。</li>
+        </ul>
+      </section>
 
-    <div class="divider"></div>
+      <div class="divider"></div>
 
-    <section>
-      <h2>第11条（規約変更）</h2>
-      <p>運営者は、必要に応じて本規約を変更できます。変更後の規約は、本サービス上での掲示または運営者が適切と判断する方法で周知した時点から効力を生じます。</p>
-    </section>
+      <section>
+        <h2>第10条（サービスの変更・停止）</h2>
+        <p>運営者は、ユーザーへの事前通知なく、本サービスの内容の変更、提供の停止または中断を行うことがあります。</p>
+      </section>
 
-    <div class="divider"></div>
+      <div class="divider"></div>
 
-    <section>
-      <h2>第12条（準拠法・裁判管轄）</h2>
-      <p>本規約は日本法を準拠法とし、本サービスに関して紛争が生じた場合、運営者所在地を管轄する裁判所を専属的合意管轄とします。</p>
-    </section>
+      <section>
+        <h2>第11条（免責事項）</h2>
+        <ul>
+          <li>運営者は、本サービスに関して、事実上または法律上の瑕疵がないことを保証しません。</li>
+          <li>本サービスは家計管理を補助するものであり、ユーザーの金銭管理、貯蓄、投資、税務、法務等の結果を保証するものではありません。</li>
+          <li>本サービスの利用によりユーザーに生じた損害について、運営者は責任を負いません（運営者の故意または重大な過失がある場合を除きます）。</li>
+          <li>通信回線、端末、アプリストア、外部サービス等の障害により生じた損害について、運営者は責任を負いません。</li>
+        </ul>
+      </section>
 
-    <div class="divider"></div>
+      <div class="divider"></div>
 
-    <section>
-      <h2>お問い合わせ</h2>
-      <p>本サービスに関するお問い合わせは、以下のメールアドレスまでご連絡ください。</p>
-      <p>お問い合わせ窓口（運営者メール）：<a href="mailto:splingnew@gmail.com">splingnew@gmail.com</a><br />
-        ※ ご連絡の際は、表示名（アプリ内で設定している名前）を記載いただくと対応がスムーズです。</p>
-    </section>
+      <section>
+        <h2>第12条（規約変更）</h2>
+        <p>運営者は、必要に応じて本規約を変更できます。変更後の規約は、本サービス上での掲示または運営者が適切と判断する方法で周知した時点から効力を生じます。</p>
+      </section>
 
-    <p class="small">最終更新日：2025年12月17日</p>
+      <div class="divider"></div>
+
+      <section>
+        <h2>第13条（準拠法・裁判管轄）</h2>
+        <p>本規約は日本法を準拠法とし、本サービスに関して紛争が生じた場合、運営者所在地を管轄する裁判所を専属的合意管轄とします。</p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2>お問い合わせ</h2>
+        <p>本サービスに関するお問い合わせは、以下のメールアドレスまでご連絡ください。</p>
+        <p>お問い合わせ窓口（運営者メール）：<a href="mailto:splingnew@gmail.com">splingnew@gmail.com</a><br />※ ご連絡の際は、表示名（アプリ内で設定している名前）を記載いただくと対応がスムーズです。</p>
+      </section>
+    </div>
+
+    <div id="section-en" class="lang-section" lang="en">
+      <span class="lang-label">English</span>
+
+      <section>
+        <p>These Terms of Use ("Terms") set forth the conditions for using Wallet Days ("the Service"). By using the Service, users agree to these Terms.</p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2>Article 1 (Application)</h2>
+        <ul>
+          <li>These Terms apply to all relationships between the operator and users regarding the use of the Service.</li>
+          <li>Rules and guidelines separately posted by the operator within the Service constitute part of these Terms.</li>
+        </ul>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2>Article 2 (Definitions)</h2>
+        <ul>
+          <li>"User" means any person who uses the Service.</li>
+          <li>"Input Data" means information entered or saved by the user in the Service, including expenses, budgets, categories, notes, and settings.</li>
+          <li>"Premium" means paid features of the Service.</li>
+        </ul>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2>Article 3 (Registration and Accounts)</h2>
+        <ul>
+          <li>The Service may be used without registration or with an anonymous account.</li>
+          <li>For data backup, synchronization, and transfer, users may be able to log in using an email address, Apple account, Google account, or other supported method.</li>
+          <li>Users are responsible for managing their login information. The operator is not liable for damages caused by use by a third party, except in cases of intentional misconduct or gross negligence by the operator.</li>
+        </ul>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2>Article 4 (Service Description)</h2>
+        <ul>
+          <li>The Service is a household budget support tool that allows users to record expenses and budgets and check remaining budget and spending trends.</li>
+          <li>Displays, comments, notifications, reports, and other information in the Service are reference information based on Input Data and do not constitute financial, accounting, tax, legal, or other professional advice.</li>
+          <li>Users shall use the information displayed in the Service as reference information and make final decisions at their own responsibility.</li>
+        </ul>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2>Article 5 (Prohibited Acts)</h2>
+        <ul>
+          <li>Acts that violate laws or public order and morals</li>
+          <li>Acts related to criminal activity</li>
+          <li>Acts that infringe the rights of the Service or third parties, including copyrights, trademarks, and privacy rights</li>
+          <li>Acts that interfere with operation of the Service, including excessive load, reverse engineering, or unauthorized access</li>
+          <li>Use of the Service with false or fraudulent information</li>
+          <li>Any other acts deemed inappropriate by the operator</li>
+        </ul>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2>Article 6 (Handling of Input Data)</h2>
+        <ul>
+          <li>Rights to Input Data saved by users in the Service generally belong to the users.</li>
+          <li>The operator may handle Input Data to the extent necessary to provide the Service, synchronize and back up data, respond to bugs, and improve quality. Details are set forth in the Privacy Policy.</li>
+          <li>Users are responsible for saving and managing their Input Data. The operator is not liable for damages caused by device failure, user error, communication failure, or similar events, except in cases of intentional misconduct or gross negligence by the operator.</li>
+        </ul>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2>Article 7 (Notifications, Comments, and Reports)</h2>
+        <ul>
+          <li>The Service may display notifications, comments, monthly reports, and similar information after expense records are added.</li>
+          <li>These are reference information intended to help users understand their spending in an enjoyable way, and accuracy, completeness, or fitness for a particular purpose is not guaranteed.</li>
+          <li>Notification settings may be changed in device settings or in-app settings where available.</li>
+        </ul>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2>Article 8 (Advertisements)</h2>
+        <ul>
+          <li>The Service may display advertisements within the free version or free features.</li>
+          <li>Advertisements may be removed or limited through Premium, according to specifications determined by the operator.</li>
+        </ul>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2>Article 9 (Premium and Billing)</h2>
+        <ul>
+          <li>Users may access benefits determined by the operator by purchasing paid features (Premium) in the Service.</li>
+          <li>Premium may be provided as an auto-renewing subscription through Apple, Google, or other app stores.</li>
+          <li>Cancellation must be completed according to the method provided by each app store.</li>
+          <li>If purchase restoration is available, users must follow the in-app instructions or procedures determined by the operator.</li>
+          <li>Refunds are handled according to the rules of each app store. Except where legally required, the operator does not issue refunds directly.</li>
+        </ul>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2>Article 10 (Changes or Suspension of the Service)</h2>
+        <p>The operator may change, suspend, or discontinue all or part of the Service without prior notice to users.</p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2>Article 11 (Disclaimer)</h2>
+        <ul>
+          <li>The operator does not warrant that the Service is free from factual or legal defects.</li>
+          <li>The Service is intended to support household budget management and does not guarantee any results regarding money management, savings, investments, taxes, or legal matters.</li>
+          <li>The operator is not liable for damages incurred by users through use of the Service, except in cases of intentional misconduct or gross negligence by the operator.</li>
+          <li>The operator is not liable for damages caused by communication lines, devices, app stores, third-party services, or other external factors.</li>
+        </ul>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2>Article 12 (Changes to Terms)</h2>
+        <p>The operator may change these Terms as necessary. The revised Terms will take effect when posted in the Service or otherwise announced as deemed appropriate by the operator.</p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2>Article 13 (Governing Law and Jurisdiction)</h2>
+        <p>These Terms are governed by the laws of Japan. If any dispute arises in connection with the Service, the court having jurisdiction over the operator's location shall have exclusive agreed jurisdiction.</p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2>Contact</h2>
+        <p>For inquiries regarding the Service, please contact:</p>
+        <p>Operator email: <a href="mailto:splingnew@gmail.com">splingnew@gmail.com</a><br />For smooth correspondence, please include your display name as set in the app.</p>
+      </section>
+    </div>
+
+    <p class="small"><span data-ja="最終更新日：2026年" data-en="Last updated: 2026">最終更新日：2026年</span></p>
 
   </div>
+<script>
+  function setLang(lang) {
+    const ja = document.getElementById('section-ja');
+    const en = document.getElementById('section-en');
+    const btnJa = document.getElementById('btn-ja');
+    const btnEn = document.getElementById('btn-en');
+
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-ja][data-en]').forEach((el) => {
+      el.textContent = lang === 'ja' ? el.dataset.ja : el.dataset.en;
+    });
+
+    if (lang === 'ja') {
+      ja.classList.remove('hidden');
+      en.classList.add('hidden');
+      btnJa.classList.add('active');
+      btnEn.classList.remove('active');
+    } else {
+      en.classList.remove('hidden');
+      ja.classList.add('hidden');
+      btnEn.classList.add('active');
+      btnJa.classList.remove('active');
+    }
+
+    try { localStorage.setItem('lang', lang); } catch(e) {}
+  }
+
+  (function initLang() {
+    let lang = 'ja';
+    let savedLang = null;
+    try { savedLang = localStorage.getItem('lang'); } catch(e) {}
+    try { lang = savedLang || lang; } catch(e) {}
+
+    if (!savedLang) {
+      const nav = (navigator.language || navigator.userLanguage || 'ja').toLowerCase();
+      if (nav.startsWith('en')) lang = 'en';
+    }
+
+    setLang(lang);
+  })();
+</script>
 </body>
 </html>
